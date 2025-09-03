@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Services | Vegas Media</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h2>V<span>M</span></h2>
+                </div>
+                <!-- Search Form -->
+                <div class="search-item">
+                    <form class="search-form" id="header-search-form">
+                        <input type="text" id="search-input" placeholder="Search gallery..." aria-label="Search">
+                        <button type="submit" class="search-btn" aria-label="Submit search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <!-- Cart Icon -->
+                <div class="cart-icon" style="cursor: pointer; margin-left: 1rem;">
+                    <i class="fas fa-shopping-cart" style="font-size: 1.5rem; color: var(--dark); position: relative;"></i>
+                    <span class="cart-count" style="position: absolute; top: -8px; right: -8px; background: var(--primary); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem;">0</span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="animate fadeInDown">Book Our Photography Services</h1>
+                    <p class="animate fadeInUp">Reserve your session with Vegas Media and capture Malawi's beauty</p>
+                    <div class="hero-btns animate fadeInUp">
+                        <a href="#services" class="btn primary-btn">View Services</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=600&q=80" alt="Professional Photography Booking" class="animate fadeInUp">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Photography Services</h2>
+                <p>Professional services tailored to capture Malawi's unique beauty</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate fadeInUp">
+                    <div class="service-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Traditional Wedding Photography</h3>
+                    <p>Capture your special day with our professional wedding photography services, showcasing Malawian traditions.</p>
+                    <span class="price">MK80,000 - MK200,000</span>
+                    <button class="btn secondary-btn book-service" data-service="wedding">Book Now</button>
+
+                </div>
+                <div class="service-card animate fadeInUp">
+                    <div class="service-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Cultural Portrait Sessions</h3>
+                    <p>Professional portraits highlighting Malawi's diverse cultures and people.</p>
+                    <span class="price">MK20,000 - MK50,000</span>
+                    <button class="btn secondary-btn book-service" data-service="portrait">Book Now</button>
+
+                </div>
+                <div class="service-card animate fadeInUp">
+                    <div class="service-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Landscape Photography</h3>
+                    <p>Stunning landscape photography of Lake Malawi, Mount Mulanje, and other natural wonders.</p>
+                    <span class="price">MK15,000 - MK40,000</span>
+                    <button class="btn secondary-btn book-service" data-service="nature">Book Now</button>
+
+                </div>
+                <div class="service-card animate fadeInUp">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Event Coverage</h3>
+                    <p>Professional coverage for cultural events, festivals, and special occasions in Malawi.</p>
+                    <span class="price">MK50,000 - MK150,000</span>
+                    <button class="btn secondary-btn book-service" data-service="event">Book Now</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Services Section -->
+    <section class="other-services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Other Services</h2>
+                <p>Additional services to complement your photography needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate fadeInUp">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Computer Training</h3>
+                    <p>Professional computer training sessions for individuals and groups. Learn essential digital skills.</p>
+                    <span class="price">MK15,000 - MK50,000</span>
+                    <button class="btn secondary-btn add-to-cart-service" data-id="training" data-name="Computer Training" data-price="15000">Add to Cart</button>
+                </div>
+                <div class="service-card animate fadeInUp">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom website development and design services for businesses and personal projects.</p>
+                    <span class="price">MK80,000 - MK300,000</span>
+                    <button class="btn secondary-btn add-to-cart-service" data-id="webdev" data-name="Web Development" data-price="80000">Add to Cart</button>
+                </div>
+                <div class="service-card animate fadeInUp">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Designing</h3>
+                    <p>Creative graphic design services including logos, branding, and marketing materials.</p>
+                    <span class="price">MK20,000 - MK100,000</span>
+                    <button class="btn secondary-btn add-to-cart-service" data-id="design" data-name="Designing" data-price="20000">Add to Cart</button>
+                </div>
+                <div class="service-card animate fadeInUp">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Networking</h3>
+                    <p>Network setup, maintenance, and troubleshooting services for homes and businesses.</p>
+                    <span class="price">MK30,000 - MK150,000</span>
+                    <button class="btn secondary-btn add-to-cart-service" data-id="networking" data-name="Networking" data-price="30000">Add to Cart</button>
+                </div>
+                <div class="service-card animate fadeInUp">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Computer Selling</h3>
+                    <p>Quality computers and accessories for personal and business use at competitive prices.</p>
+                    <span class="price">MK350,000 - MK500,000</span>
+                    <button class="btn secondary-btn add-to-cart-service" data-id="computers" data-name="Computer Selling" data-price="350000">Add to Cart</button>
+                </div>
+                <!-- New Services -->
+                <div class="service-card animate fadeInUp">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Editing</h3>
+                    <p>Professional video editing services for events, commercials, and social media content.</p>
+                    <span class="price">MK40,000 - MK200,000</span>
+                    <button class="btn secondary-btn add-to-cart-service" data-id="video" data-name="Video Editing" data-price="40000">Add to Cart</button>
+                </div>
+                <div class="service-card animate fadeInUp">
+                    <div class="service-icon">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <h3>Social Media Management</h3>
+                    <p>Complete social media management and marketing services for businesses and individuals.</p>
+                    <span class="price">MK30,000 - MK150,000/month</span>
+                    <button class="btn secondary-btn add-to-cart-service" data-id="social" data-name="Social Media Management" data-price="30000">Add to Cart</button>
+                </div>
+                <div class="service-card animate fadeInUp">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>IT Support</h3>
+                    <p>Professional IT support services for businesses and individuals including troubleshooting and maintenance.</p>
+                    <span class="price">MK25,000 - MK100,000</span>
+                    <button class="btn secondary-btn add-to-cart-service" data-id="support" data-name="IT Support" data-price="25000">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Prints Section -->
+    <section class="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Prints</h2>
+                <p>Purchase high-quality prints from our collection</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card animate fadeInUp" data-id="p1">
+                    <div class="product-image">
+                        <img src="sunrise.jpg" alt="Lake Malawi Sunrise Print">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lake Malawi Sunrise Print</h3>
+                        <p>High-quality photographic print capturing Malawi's natural beauty</p>
+                        <span class="product-price">MK89,999</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card animate fadeInUp" data-id="p2">
+                    <div class="product-image">
+                        <img src="scape.jpg" alt="Mount Mulanje Landscape Print">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mount Mulanje Landscape Print</h3>
+                        <p>Stunning landscape photography of Malawi's highest peak</p>
+                        <span class="product-price">MK129,999</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card animate fadeInUp" data-id="p3">
+                    <div class="product-image">
+                        <img src="tradition.jpg" alt="Traditional Dance Print">
+                    </div>
+                    <div class="product-info">
+                        <h3>Traditional Dance Print</h3>
+                        <p>Capturing the vibrant culture of Malawi through traditional dance</p>
+                        <span class="product-price">MK79,999</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card animate fadeInUp" data-id="p4">
+                    <div class="product-image">
+                        <img src="boab.jpg" alt="Baobab Tree Photography Print">
+                    </div>
+                    <div class="product-info">
+                        <h3>Baobab Tree Photography Print</h3>
+                        <p>Iconic Malawian tree captured in stunning detail</p>
+                        <span class="product-price">MK99,999</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Packages Section -->
+    <section class="services-packages">
+        <div class="container">
+            <div class="section-title">
+                <h2>Service Packages</h2>
+                <p>Pre-selected packages for your convenience</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate fadeInUp">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Wedding Deluxe Package</h3>
+                    <p>Full wedding coverage including pre-wedding session, full-day coverage, and premium album.</p>
+                    <ul>
+                        <li>Pre-wedding portrait session</li>
+                        <li>Full-day wedding coverage</li>
+                        <li>Professional editing of 500+ photos</li>
+                        <li>Premium leather album (20 pages)</li>
+                        <li>High-resolution digital images</li>
+                    </ul>
+                    <span class="price">MK200,000</span>
+                    <button class="btn secondary-btn add-to-cart-service" data-id="wedding-deluxe" data-name="Wedding Deluxe Package" data-price="200000">Add to Cart</button>
+
+                </div>
+                <div class="service-card animate fadeInUp">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Family Portrait Package</h3>
+                    <p>Complete family portrait session with multiple outfit changes and locations.</p>
+                    <ul>
+                        <li>2-hour session</li>
+                        <li>2 outfit changes</li>
+                        <li>2 location options</li>
+                        <li>Professional editing of 30+ photos</li>
+                        <li>High-resolution digital images</li>
+                    </ul>
+                    <span class="price">MK50,000</span>
+                    <button class="btn secondary-btn add-to-cart-service" data-id="family-portrait" data-name="Family Portrait Package" data-price="50000">Add to Cart</button>
+
+                </div>
+                <div class="service-card animate fadeInUp">
+                    <div class="service-icon">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <h3>Landscape Adventure Package</h3>
+                    <p>Multi-location landscape photography session with drone coverage.</p>
+                    <ul>
+                        <li>Full-day adventure</li>
+                        <li>3 scenic locations</li>
+                        <li>Drone aerial photography</li>
+                        <li>Professional editing of 50+ photos</li>
+                        <li>High-resolution digital images</li>
+                    </ul>
+                    <span class="price">MK80,000</span>
+                    <button class="btn secondary-btn add-to-cart-service" data-id="landscape-adventure" data-name="Landscape Adventure Package" data-price="80000">Add to Cart</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Booking Works -->
+    <section class="booking-process">
+        <div class="container">
+            <div class="section-title">
+                <h2>How Booking Works</h2>
+                <p>Simple steps to reserve your photography session</p>
+            </div>
+            <div class="process-steps">
+                <div class="step animate fadeInUp">
+                    <div class="step-number">1</div>
+                    <h3>Choose Service</h3>
+                    <p>Browse our services and select what you need</p>
+                </div>
+                <div class="step animate fadeInUp">
+                    <div class="step-number">2</div>
+                    <h3>Add to Cart</h3>
+
+                </div>
+                <div class="step animate fadeInUp">
+                    <div class="step-number">3</div>
+                    <h3>Checkout</h3>
+                    <p>Proceed to checkout and pay deposit</p>
+                </div>
+                <div class="step animate fadeInUp">
+                    <div class="step-number">4</div>
+                    <h3>Confirmation</h3>
+                    <p>Receive booking confirmation and details</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="booking" class="booking-modal">
+        <div class="booking-content">
+            <span class="close-booking">&times;</span>
+            <h2>Book a Session</h2>
+            <form id="booking-payment-form">
+                <div class="form-group">
+                    <label for="booking-name">Full Name</label>
+                    <input type="text" id="booking-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-email">Email Address</label>
+                    <input type="email" id="booking-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-phone">Phone Number</label>
+                    <input type="tel" id="booking-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-service">Service</label>
+                    <select id="booking-service" required>
+                        <option value="" disabled selected>Select a Service</option>
+                        <option value="wedding">Traditional Wedding Photography - MK80,000 - MK200,000</option>
+                        <option value="portrait">Cultural Portrait Sessions - MK20,000 - MK50,000</option>
+                        <option value="nature">Landscape Photography - MK15,000 - MK40,000</option>
+                        <option value="event">Event Coverage - MK50,000 - MK150,000</option>
+                        <option value="training">Computer Training - MK15,000 - MK50,000</option>
+                        <option value="webdev">Web Development - MK80,000 - MK300,000</option>
+                        <option value="design">Designing - MK20,000 - MK100,000</option>
+                        <option value="networking">Networking - MK30,000 - MK150,000</option>
+                        <option value="computers">Computer Selling - MK50,000 - MK500,000</option>
+                        <option value="video">Video Editing - MK40,000 - MK200,000</option>
+                        <option value="social">Social Media Management - MK30,000 - MK150,000/month</option>
+                        <option value="support">IT Support - MK25,000 - MK100,000</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="booking-date">Preferred Date</label>
+                    <input type="date" id="booking-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-location">Location</label>
+                    <input type="text" id="booking-location" placeholder="Where would you like the session?" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-message">Additional Details</label>
+                    <textarea id="booking-message" rows="4" placeholder="Any special requests or details..."></textarea>
+                </div>
+                
+                <div class="payment-section">
+                    <h3>Payment Information</h3>
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method</label>
+                        <select id="payment-method" required>
+                            <option value="" disabled selected>Select Payment Method</option>
+                            <option value="mpamba">TNM Mpamba</option>
+                            <option value="airtel">Airtel Money</option>
+                            <option value="bank">Bank Transfer</option>
+                            <option value="cash">Cash Payment</option>
+                        </select>
+                    </div>
+                    
+                    <div id="mobile-money-details" class="payment-details">
+                        <h4>Mobile Money Payment Instructions</h4>
+                        <p class="payment-info">Send the deposit amount to our business number using your mobile money service.</p>
+                        <div class="business-details">
+                            <p><strong>Business Number:</strong> 0997677784</p>
+                            <p><strong>Account Name:</strong> Vegas Media</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile-number">Your Mobile Number</label>
+                            <input type="tel" id="mobile-number" placeholder="Enter your mobile number for confirmation">
+                        </div>
+                        <div class="form-group">
+                            <label for="transaction-id">Transaction ID/Reference</label>
+                            <input type="text" id="transaction-id" placeholder="Enter transaction reference after payment">
+                        </div>
+                        <p class="payment-info"><em>Note: After sending the payment, please enter the transaction ID above for faster confirmation.</em></p>
+                    </div>
+                    
+                    <div id="bank-details" class="payment-details">
+                        <h4>Bank Transfer Details</h4>
+                        <div class="business-details">
+                            <p><strong>Bank Name:</strong> National Bank of Malawi</p>
+                            <p><strong>Account Name:</strong> Vegas Media</p>
+                            <p><strong>Account Number:</strong> 1234567890</p>
+                            <p><strong>Branch:</strong> Lilongwe</p>
+                            <p><strong>Branch Code:</strong> 001234</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="bank-transaction-id">Bank Transaction ID/Reference</label>
+                            <input type="text" id="bank-transaction-id" placeholder="Enter bank transaction reference">
+                        </div>
+                        <p class="payment-info"><em>Bank transfers may take 1-2 business days to process. Please keep your transaction receipt for reference.</em></p>
+                    </div>
+                    
+                    <div id="cash-details" class="payment-details">
+                        <h4>Cash Payment Details</h4>
+                        <p class="payment-info">For cash payments, please visit our studio during working hours.</p>
+                        <div class="business-details">
+                            <p><strong>Address:</strong> 123 Photography Lane, Lilongwe, Malawi</p>
+                            <p><strong>Working Hours:</strong> Monday - Friday 8AM - 5PM, Saturday 9AM - 1PM</p>
+                        </div>
+                        <p class="payment-info"><em>Please bring exact change if possible. Receipts will be provided upon payment.</em></p>
+                    </div>
+                </div>
+                
+                <div class="booking-total">
+                    <h3>Booking Deposit: MK<span id="booking-deposit">10,000</span></h3>
+                    <p class="deposit-info">A deposit is required to secure your booking. The remaining balance will be paid on the day of the session.</p>
+                </div>
+                
+                <button type="submit" class="btn primary-btn">Confirm Booking & Pay Deposit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Payment Confirmation Modal -->
+    <div id="payment-confirmation" class="confirmation-modal">
+        <div class="confirmation-content">
+            <div class="confirmation-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Booking Confirmed!</h2>
+            <p>Thank you for your booking. We've sent a confirmation to your email.</p>
+            <div class="confirmation-details">
+                <p><strong>Booking ID:</strong> <span id="confirmation-id">BM2023001</span></p>
+                <p><strong>Service:</strong> <span id="confirmation-service">Traditional Wedding Photography</span></p>
+                <p><strong>Date:</strong> <span id="confirmation-date">June 15, 2023</span></p>
+                <p><strong>Deposit Paid:</strong> <span id="confirmation-amount">MK10,000</span></p>
+            </div>
+            <button class="btn primary-btn close-confirmation">Close</button>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cart" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-total">
+                <h3>Total: MK<span id="total-price">0.00</span></h3>
+                <button class="btn primary-btn checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="booking-modal">
+        <div class="booking-content">
+            <span class="close-payment">&times;</span>
+            <h2>Complete Your Purchase</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="payment-name">Full Name</label>
+                    <input type="text" id="payment-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment-email">Email Address</label>
+                    <input type="email" id="payment-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment-phone">Phone Number</label>
+                    <input type="tel" id="payment-phone" required>
+                </div>
+                
+                <div class="cart-summary">
+                    <h3>Your Order</h3>
+                    <div id="cart-summary-items"></div>
+                    <div class="cart-summary-total">
+                        <h4>Total: MK<span id="payment-total">0.00</span></h4>
+                    </div>
+                </div>
+                
+                <div class="payment-section">
+                    <h3>Payment Information</h3>
+                    <div class="form-group">
+                        <label for="cart-payment-method">Payment Method</label>
+                        <select id="cart-payment-method" required>
+                            <option value="" disabled selected>Select Payment Method</option>
+                            <option value="mpamba">TNM Mpamba</option>
+                            <option value="airtel">Airtel Money</option>
+                            <option value="bank">Bank Transfer</option>
+                            <option value="cash">Cash Payment</option>
+                        </select>
+                    </div>
+                    
+                    <div id="cart-mobile-money-details" class="payment-details">
+                        <h4>Mobile Money Payment Instructions</h4>
+                        <p class="payment-info">Send the total amount to our business number using your mobile money service.</p>
+                        <div class="business-details">
+                            <p><strong>Business Number:</strong> 0997677784</p>
+                            <p><strong>Account Name:</strong> Vegas Media</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="cart-mobile-number">Your Mobile Number</label>
+                            <input type="tel" id="cart-mobile-number" placeholder="Enter your mobile number for confirmation">
+                        </div>
+                        <div class="form-group">
+                            <label for="cart-transaction-id">Transaction ID/Reference</label>
+                            <input type="text" id="cart-transaction-id" placeholder="Enter transaction reference after payment">
+                        </div>
+                        <p class="payment-info"><em>Note: After sending the payment, please enter the transaction ID above for faster confirmation.</em></p>
+                    </div>
+                    
+                    <div id="cart-bank-details" class="payment-details">
+                        <h4>Bank Transfer Details</h4>
+                        <div class="business-details">
+                            <p><strong>Bank Name:</strong> National Bank of Malawi</p>
+                            <p><strong>Account Name:</strong> Vegas Media</p>
+                            <p><strong>Account Number:</strong> 1234567890</p>
+                            <p><strong>Branch:</strong> Lilongwe</p>
+                            <p><strong>Branch Code:</strong> 001234</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="cart-bank-transaction-id">Bank Transaction ID/Reference</label>
+                            <input type="text" id="cart-bank-transaction-id" placeholder="Enter bank transaction reference">
+                        </div>
+                        <p class="payment-info"><em>Bank transfers may take 1-2 business days to process. Please keep your transaction receipt for reference.</em></p>
+                    </div>
+                    
+                    <div id="cart-cash-details" class="payment-details">
+                        <h4>Cash Payment Details</h4>
+                        <p class="payment-info">For cash payments, please visit our studio during working hours.</p>
+                        <div class="business-details">
+                            <p><strong>Address:</strong> 123 Photography Lane, Lilongwe, Malawi</p>
+                            <p><strong>Working Hours:</strong> Monday - Friday 8AM - 5PM, Saturday 9AM - 1PM</p>
+                        </div>
+                        <p class="payment-info"><em>Please bring exact change if possible. Receipts will be provided upon payment.</em></p>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn primary-btn">Complete Payment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Payment Confirmation Modal -->
+    <div id="payment-confirmation" class="confirmation-modal">
+        <div class="confirmation-content">
+            <div class="confirmation-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Payment Successful!</h2>
+            <p>Thank you for your purchase. We've sent a confirmation to your email.</p>
+            <div class="confirmation-details">
+                <p><strong>Order ID:</strong> <span id="order-id">ORD2023001</span></p>
+                <p><strong>Total Paid:</strong> <span id="confirmation-amount">MK0.00</span></p>
+            </div>
+            <button class="btn primary-btn close-confirmation">Close</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/265997677784" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Vegas Media</h3>
+                    <p>Capturing the beauty of Malawi through the lens of artistry and passion since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Traditional Wedding Photography</a></li>
+                        <li><a href="#">Cultural Portrait Sessions</a></li>
+                        <li><a href="#">Landscape Photography</a></li>
+                        <li><a href="#">Event Coverage</a></li>
+                        <li><a href="#">Photo Prints</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">+265997677784</a></li>
+                        <li><a href="#">vegasmediamw@gmail.com</a></li>
+                        <li><a href="#">Lilongwe, area 24, Malawi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vegas Media. All rights reserved. designed by <span>KONDWANI</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

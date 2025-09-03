@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegas Media | Professional Photography Services in Malawi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h2>V<span>M</span></h2>
+                </div>
+
+                <!-- Search Form -->
+                <div class="search-item">
+                    <form class="search-form" id="header-search-form">
+                        <input type="text" id="search-input" placeholder="Search gallery..." aria-label="Search">
+                        <button type="submit" class="search-btn" aria-label="Submit search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+
+
+             <!-- Cart Icon -->
+                <div class="cart-icon" style="cursor: pointer; margin-left: 1rem;">
+                    <i class="fas fa-shopping-cart" style="font-size: 1.5rem; color: var(--dark); position: relative;"></i>
+                    <span class="cart-count" style="position: absolute; top: -8px; right: -8px; background: var(--primary); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem;">0</span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="precious.jpg" style="height: 500px;" alt="Professional Photography in Malawi">
+                </div>
+                <div class="hero-text">
+                    <h1 class="animate fadeInDown">Capturing Malawi's Vibrant Culture & Landscapes</h1>
+                    <p class="animate fadeInUp">Professional photography services showcasing the heart of Africa - from Lake Malawi to Mount Mulanje</p>
+                    <div class="hero-btns animate fadeInUp">
+                        <a href="#gallery" class="btn primary-btn">View Gallery</a>
+                        <a href="#services" class="btn secondary-btn">Our Services</a>
+                        <a href="team.html" class="btn secondary-btn">Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Gallery</h2>
+                <p>Showcasing the beauty of Malawi through our lens</p>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="portrait">Portraits</button>
+                <button class="filter-btn" data-filter="wedding">Weddings</button>
+                <button class="filter-btn" data-filter="event">Events</button>
+            </div>
+            <div class="gallery-grid">
+                <!-- Adding some static items to ensure gallery is visible immediately -->
+                <div class="gallery-item animate fadeInUp animated" data-category="nature">
+                    <img src="girl1.jpg" alt="girl1">
+                    <div class="overlay">
+                        <h3>Catherine Banda</h3>
+                        <p>Super Clean Picture</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate fadeInUp animated" data-category="portrait">
+                    <img src="girl6.jpg" alt="girl6">
+                    <div class="overlay">
+                        <h3>Chifundo</h3>
+                        <p>Professional Portrait Photography</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate fadeInUp animated" data-category="nature">
+                    <img src="girl7.jpg" alt="girl7">
+                    <div class="overlay">
+                        <h3>MERCY</h3>
+                        <p>Nature Photography in Malawi</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate fadeInUp animated" data-category="event">
+                    <img src="bride.jpg" alt="bride">
+                    <div class="overlay">
+                        <h3>Bride</h3>
+                        <p>Event Photography in Malawi</p>
+                    </div>
+                </div>
+                <!-- Gallery items will be populated by JavaScript -->
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Professional photography services tailored to Malawi's unique beauty</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate fadeInUp delay-1">
+                    <div class="service-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Traditional Wedding Photography</h3>
+                    <p>Capture your special day with our professional wedding photography services, showcasing Malawian traditions.</p>
+                    <span class="price">MK80,000 - MK200,000</span>
+                    <button class="btn secondary-btn book-service" data-service="wedding">Book Now</button>
+                </div>
+                <div class="service-card animate fadeInUp delay-2">
+                    <div class="service-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Cultural Portrait Sessions</h3>
+                    <p>Professional portraits highlighting Malawi's diverse cultures and people.</p>
+                    <span class="price">MK20,000 - MK50,000</span>
+                    <button class="btn secondary-btn book-service" data-service="portrait">Book Now</button>
+                </div>
+                <div class="service-card animate fadeInUp delay-3">
+                    <div class="service-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Landscape Photography</h3>
+                    <p>Stunning landscape photography of Lake Malawi, Mount Mulanje, and other natural wonders.</p>
+                    <span class="price">MK15,000 - MK40,000</span>
+                    <button class="btn secondary-btn book-service" data-service="nature">Book Now</button>
+                </div>
+                <div class="service-card animate fadeInUp delay-4">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Event Coverage</h3>
+                    <p>Professional coverage for cultural events, festivals, and special occasions in Malawi.</p>
+                    <span class="price">MK50,000 - MK150,000</span>
+                    <button class="btn secondary-btn book-service" data-service="event">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Prints</h2>
+                <p>Purchase high-quality prints from our collection</p>
+            </div>
+            <div class="products-grid">
+                <!-- Products will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image animate fadeInLeft">
+                    <img src="precious1.jpg" alt="Photographer in Malawi">
+                </div>
+                <div class="about-text animate fadeInRight">
+                    <h2>About Vegas Media</h2>
+                    <p>Founded in Lilongwe in 2019, Vegas Media has been capturing the breathtaking beauty of the Warm Heart of Africa for over a decade. Our team of professional photographers specializes in showcasing Malawi's stunning landscapes, vibrant culture, and unforgettable moments.</p>
+                    <p>From the crystal-clear waters of Lake Malawi to the majestic peaks of Mount Mulanje, we capture the diverse beauty of Malawi through our lenses. We believe that every photograph should evoke emotion and preserve memories for generations to come.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>100+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>500+</h3>
+                            <p>Photos Captured</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>What our clients say about us</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"The wedding photography exceeded our expectations. Every moment was captured beautifully, and the emotions were perfectly portrayed. Highly recommended!"</p>
+                        <div class="client-info">
+                            <h4>Sarah & Michael Johnson</h4>
+                            <p>Wedding Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Our family portraits turned out absolutely stunning. The photographer had a great eye for detail and made everyone feel comfortable during the session."</p>
+                        <div class="client-info">
+                            <h4>The Thompson Family</h4>
+                            <p>Portrait Session</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The landscape prints we purchased are now the centerpiece of our living room. The quality and detail are exceptional."</p>
+                        <div class="client-info">
+                            <h4>Robert Chen</h4>
+                            <p>Art Collector</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Photographers</h2>
+                <p>Meet the talented team behind Vegas Media</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member animate fadeInUp">
+                    <div class="member-image">
+                        <img src="precious1.jpg" alt="Precious">
+                    </div>
+                    <div class="member-info">
+                        <h3>Precious Mkumba</h3>
+                        <p class="role">Founder & Lead Photographer</p>
+                        <p>Specializing in wedding and cultural photography with over 12 years of experience capturing Malawi's beauty.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member animate fadeInUp">
+                    <div class="member-image">
+                        <img src="precious1.jpg" alt="Grace Banda">
+                    </div>
+                    <div class="member-info">
+                        <h3>Precious</h3>
+                        <p class="role">Portrait Specialist</p>
+                        <p>Focused on capturing the authentic spirit of Malawians through compelling portrait photography.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member animate fadeInUp">
+                    <div class="member-image">
+                        <img src="precious1.jpg" alt="David Phiri">
+                    </div>
+                    <div class="member-info">
+                        <h3>David Phiri</h3>
+                        <p class="role">Landscape Photographer</p>
+                        <p>Documenting Malawi's stunning natural landscapes from Lake Malawi to the Nyika Plateau.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional Malawi-focused photographers -->
+                <div class="team-member animate fadeInUp">
+                    <div class="member-image">
+                        <img src="pic3.jpg" alt="Esther Chimwendo">
+                    </div>
+                    <div class="member-info">
+                        <h3>CEO</h3>
+                        <p class="role">DIRECTOR</p>
+                        <p>he is dedicated to preserving Malawi’s cultural 
+                            heritage by capturing traditional ceremonies and the 
+                            evolving spirit of community life.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="team-member animate fadeInUp">
+                    <div class="member-image">
+                        <img src="pic1.jpg" alt="Esther Chimwendo">
+                    </div>
+                    <div class="member-info">
+                        <h3></h3>
+                        <p class="role">Cultural Documentation Specialist</p>
+                        <p>Passionate about preserving Malawi's rich cultural heritage through photography, specializing in traditional ceremonies and community life.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                            <div class="team-member animate fadeInUp">
+                    <div class="member-image">
+                        <img src="precious3.jpg" alt="Esther Chimwendo">
+                    </div>
+                    <div class="member-info">
+                        <h3></h3>
+                        <p class="role">ASSISTANCE Photography</p>
+                        <p>Very harding working and passionate assistance in our company.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest from our Blog</h2>
+                <p>Photography tips and stories from Malawi</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-post animate fadeInUp">
+                    <div class="post-image">
+                        <img src="precious.jpg" alt="Best Photography Spots in Malawi">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> June 15, 2023</span>
+                            <span><i class="far fa-user"></i>Precious Mkumba</span>
+                        </div>
+                        <h3>Top 5 Photography Spots in Malawi</h3>
+                        <p>Discover the most breathtaking locations for photography in Malawi, from Lake Malawi's shores to Mount Mulanje's peaks.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-post animate fadeInUp">
+                    <div class="post-image">
+                        <img src="precious1.jpg" alt="Cultural Photography Tips">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> May 28, 2023</span>
+                            <span><i class="far fa-user"></i>CEO</span>
+                        </div>
+                        <h3>Capturing Malawi's Cultural Heritage</h3>
+                        <p>Learn techniques for respectfully photographing Malawi's diverse cultures and traditions while preserving their authenticity.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-post animate fadeInUp">
+                    <div class="post-image">
+                        <img src="pic1.jpg" alt="Wildlife Photography">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> April 10, 2023</span>
+                            <span><i class="far fa-user"></i> David Phiri</span>
+                        </div>
+                        <h3>Wildlife Photography in Malawi's Parks</h3>
+                        <p>Expert tips for capturing Malawi's incredible wildlife in Liwonde National Park and beyond.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Additional Malawi-focused blog posts -->
+                <div class="blog-post animate fadeInUp">
+                    <div class="post-image">
+                        <img src="girl1.jpg" alt="Nyika Plateau Photography">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> March 22, 2023</span>
+                            <span><i class="far fa-user"></i>Catherine Banda</span>
+                        </div>
+                        <h3>Floral Wonders of Nyika Plateau</h3>
+                        <p>Experience the spectacular wildflower displays during Nyika Plateau's flowering season and how to capture these vibrant colors.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-post animate fadeInUp">
+                    <div class="post-image">
+                        <img src="precious.jpg" alt="Lake Malawi Photography">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> February 14, 2023</span>
+                            <span><i class="far fa-user"></i> James Mwale</span>
+                        </div>
+                        <h3>Lake Malawi: The Lake of Stars</h3>
+                        <p>Tips for capturing the magical beauty of Lake Malawi, from sunrise over the water to starry nights reflecting on its surface.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-post animate fadeInUp">
+                    <div class="post-image">
+                        <img src="precious1.jpg" alt="Traditional Ceremonies">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> January 30, 2023</span>
+                            <span><i class="far fa-user"></i> Grace Banda</span>
+                        </div>
+                        <h3>Documenting Traditional Ceremonies</h3>
+                        <p>Guidance on respectfully photographing Malawi's traditional ceremonies while maintaining cultural sensitivity and authenticity.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our services</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item animate fadeInUp">
+                    <div class="faq-question">
+                        <h3>What is included in your wedding photography package?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our wedding packages include full-day coverage, a pre-wedding consultation, professional editing of all selected photos, and delivery of high-resolution digital images. We also offer optional engagement sessions and printed albums.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate fadeInUp">
+                    <div class="faq-question">
+                        <h3>How far in advance should I book your services?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend booking 3-6 months in advance for weddings and special events, especially during peak seasons. For portrait sessions, 2-4 weeks' notice is usually sufficient. However, we do accommodate last-minute requests when possible.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate fadeInUp">
+                    <div class="faq-question">
+                        <h3>Do you travel for photography sessions outside Lilongwe?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we travel throughout Malawi for photography sessions. Travel fees may apply depending on the location. We've photographed weddings and events in Blantyre, Mzuzu, and various locations around Lake Malawi.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate fadeInUp">
+                    <div class="faq-question">
+                        <h3>How long does it take to receive our photos after a session?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Portrait sessions are typically delivered within 2 weeks, while wedding galleries take 4-6 weeks due to the extensive editing process. We provide a sneak peek of selected images within 48 hours of your session.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate fadeInUp">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept bank transfers, mobile money (Airtel Money and TNM Mpamba), and cash payments in Malawian Kwacha. For international clients, we also accept PayPal and credit card payments with a small processing fee.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Malawi Map Section -->
+    <section class="malawi-map">
+        <div class="container">
+            <div class="section-title">
+                <h2>Photography Locations in Malawi</h2>
+                <p>Discover the stunning locations we've captured across the Warm Heart of Africa</p>
+            </div>
+            <div class="map-container">
+                <div class="map-image">
+                    <img src="pic1.jpg" alt="Map of Malawi">
+                </div>
+                <div class="map-features">
+                    <div class="feature-item animate fadeInUp">
+                        <div class="feature-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Lake Malawi</h3>
+                            <p>Known as the Lake of Stars, Lake Malawi offers breathtaking sunrise and sunset photography opportunities with fishing boats and island views. Best visited during dry season (May-October).</p>
+                        </div>
+                    </div>
+                    <div class="feature-item animate fadeInUp">
+                        <div class="feature-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Mount Mulanje</h3>
+                            <p>Malawi's highest peak provides dramatic landscape photography with panoramic views, especially during the rainy season (November-April) when waterfalls are abundant.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item animate fadeInUp">
+                        <div class="feature-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Nyika Plateau</h3>
+                            <p>The rolling hills of Nyika National Park offer spectacular wildlife and landscape photography, especially during the flowering season in August when wildflowers carpet the plateau.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item animate fadeInUp">
+                        <div class="feature-icon">
+                            <i class="fas fa-umbrella-beach"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Cape Maclear</h3>
+                            <p>With pristine beaches and crystal-clear waters, Cape Maclear is perfect for coastal and underwater photography. Ideal for capturing water sports and beach culture.</p>
+                        </div>
+                    </div>
+                    <!-- Additional Malawi photography locations -->
+                    <div class="feature-item animate fadeInUp">
+                        <div class="feature-icon">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Liwonde National Park</h3>
+                            <p>Home to elephants, hippos, and diverse bird species, Liwonde offers exceptional wildlife photography opportunities, especially during guided boat safaris on the Shire River.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item animate fadeInUp">
+                        <div class="feature-icon">
+                            <i class="fas fa-archway"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Salima District</h3>
+                            <p>Rich in cultural heritage, Salima offers unique opportunities to photograph traditional villages, local markets, and the daily life of the Yao and Ngoni communities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch for bookings and inquiries in Malawi</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Studio</h3>
+                            <p>Area 24, Lilongwe, Malawi</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>265997677784</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>vegasmediamw@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 8AM - 5PM</p>
+                            <p>Saturday: 9AM - 1PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="wedding">Traditional Wedding Photography</option>
+                                <option value="portrait">Cultural Portrait Session</option>
+                                <option value="nature">Landscape Photography</option>
+                                <option value="event">Cultural Event Coverage</option>
+                                <option value="print">Photo Prints</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="booking" class="booking-modal">
+        <div class="booking-content">
+            <span class="close-booking">&times;</span>
+            <h2>Book a Session</h2>
+            <form id="booking-payment-form">
+                <div class="form-group">
+                    <label for="booking-name">Full Name</label>
+                    <input type="text" id="booking-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-email">Email Address</label>
+                    <input type="email" id="booking-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-phone">Phone Number</label>
+                    <input type="tel" id="booking-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-service">Service</label>
+                    <select id="booking-service" required>
+                        <option value="" disabled selected>Select a Service</option>
+                        <option value="wedding">Traditional Wedding Photography - MK80,000 - MK200,000</option>
+                        <option value="portrait">Cultural Portrait Sessions - MK20,000 - MK50,000</option>
+                        <option value="nature">Landscape Photography - MK15,000 - MK40,000</option>
+                        <option value="event">Event Coverage - MK50,000 - MK150,000</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="booking-date">Preferred Date</label>
+                    <input type="date" id="booking-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-location">Location</label>
+                    <input type="text" id="booking-location" placeholder="Where would you like the session?" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-message">Additional Details</label>
+                    <textarea id="booking-message" rows="4" placeholder="Any special requests or details..."></textarea>
+                </div>
+                
+                <div class="payment-section">
+                    <h3>Payment Information</h3>
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method</label>
+                        <select id="payment-method" required>
+                            <option value="" disabled selected>Select Payment Method</option>
+                            <option value="mpamba">TNM Mpamba</option>
+                            <option value="airtel">Airtel Money</option>
+                            <option value="bank">Bank Transfer</option>
+                            <option value="cash">Cash Payment</option>
+                        </select>
+                    </div>
+                    
+                    <div id="mobile-money-details" class="payment-details">
+                        <div class="form-group">
+                            <label for="mobile-number">Mobile Number</label>
+                            <input type="tel" id="mobile-number" placeholder="Enter your mobile number">
+                        </div>
+                        <p class="payment-info">You will receive a prompt on your phone to complete the payment.</p>
+                    </div>
+                    
+                    <div id="bank-details" class="payment-details">
+                        <p class="payment-info">Bank Name: National Bank of Malawi</p>
+                        <p class="payment-info">Account Name: Vegas Media</p>
+                        <p class="payment-info">Account Number: 1234567890</p>
+                        <p class="payment-info">Branch: Lilongwe</p>
+                        <div class="form-group">
+                            <label for="transaction-id">Transaction ID (if already paid)</label>
+                            <input type="text" id="transaction-id" placeholder="Enter transaction reference">
+                        </div>
+                    </div>
+                    
+                    <div id="cash-details" class="payment-details">
+                        <p class="payment-info">For cash payments, please visit our studio at:</p>
+                        <p class="payment-info">123 Photography Lane, Lilongwe, Malawi</p>
+                        <p class="payment-info">Working Hours: Monday - Friday 8AM - 5PM, Saturday 9AM - 1PM</p>
+                    </div>
+                </div>
+                
+                <div class="booking-total">
+                    <h3>Booking Deposit: MK<span id="booking-deposit">10,000</span></h3>
+                    <p class="deposit-info">A deposit is required to secure your booking. The remaining balance will be paid on the day of the session.</p>
+                </div>
+                
+                <button type="submit" class="btn primary-btn">Confirm Booking & Pay Deposit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Payment Confirmation Modal -->
+    <div id="payment-confirmation" class="confirmation-modal">
+        <div class="confirmation-content">
+            <div class="confirmation-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Booking Confirmed!</h2>
+            <p>Thank you for your booking. We've sent a confirmation to your email.</p>
+            <div class="confirmation-details">
+                <p><strong>Booking ID:</strong> <span id="confirmation-id">BM2023001</span></p>
+                <p><strong>Service:</strong> <span id="confirmation-service">Traditional Wedding Photography</span></p>
+                <p><strong>Date:</strong> <span id="confirmation-date">June 15, 2023</span></p>
+                <p><strong>Deposit Paid:</strong> <span id="confirmation-amount">MK10,000</span></p>
+            </div>
+            <button class="btn primary-btn close-confirmation">Close</button>
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- Cart Modal -->
+    <div id="cart" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-total">
+                <h3>Total: <span id="total-price">0.00</span> MK</h3>
+                <button class="btn primary-btn checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="booking-modal">
+        <div class="booking-content">
+            <span class="close-payment">&times;</span>
+            <h2>Complete Your Purchase</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="payment-name">Full Name</label>
+                    <input type="text" id="payment-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment-email">Email</label>
+                    <input type="email" id="payment-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment-phone">Phone Number</label>
+                    <input type="tel" id="payment-phone" required>
+                </div>
+                
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div id="cart-summary-items">
+                        <!-- Cart items will be populated here -->
+                    </div>
+                    <div class="cart-summary-total">
+                        <h4>Total: <span id="payment-total">0.00</span> MK</h4>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cart-payment-method">Payment Method</label>
+                    <select id="cart-payment-method" required>
+                        <option value="">Select Payment Method</option>
+                        <option value="mpamba">TNM Mpamba</option>
+                        <option value="airtel">Airtel Money</option>
+                        <option value="bank">Bank Transfer</option>
+                        <option value="cash">Cash Payment</option>
+                    </select>
+                </div>
+                
+                <!-- Mobile Money Details -->
+                <div id="cart-mobile-money-details" class="payment-details">
+                    <h4>Mobile Money Payment</h4>
+                    <p>Please send the payment to the following number:</p>
+                    <div class="business-details">
+                        <p><strong>Business Name:</strong> Vegas Media</p>
+                        <p><strong>Phone Number:</strong> +265 997 677 784</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="cart-mobile-number">Your Mobile Number</label>
+                        <input type="tel" id="cart-mobile-number" placeholder="e.g., +265 999 123 456">
+                    </div>
+                    <div class="form-group">
+                        <label for="cart-transaction-id">Transaction ID (Optional)</label>
+                        <input type="text" id="cart-transaction-id" placeholder="Enter transaction ID if available">
+                    </div>
+                    <p class="payment-info">After sending the payment, please click "Complete Payment" below.</p>
+                </div>
+                
+                <!-- Bank Details -->
+                <div id="cart-bank-details" class="payment-details">
+                    <h4>Bank Transfer</h4>
+                    <p>Please transfer the amount to the following bank account:</p>
+                    <div class="business-details">
+                        <p><strong>Account Name:</strong> Vegas Media</p>
+                        <p><strong>Bank:</strong> National Bank of Malawi</p>
+                        <p><strong>Account Number:</strong> 001122334455</p>
+                        <p><strong>Branch:</strong> Lilongwe Branch</p>
+                        <p><strong>Branch Code:</strong> 0011</p>
+                        <p><strong>Swift Code:</strong> NBMWMWML</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="cart-bank-transaction-id">Bank Transaction ID</label>
+                        <input type="text" id="cart-bank-transaction-id" placeholder="Enter bank transaction reference">
+                    </div>
+                    <p class="payment-info">After transferring the funds, please click "Complete Payment" below.</p>
+                </div>
+                
+                <!-- Cash Payment Details -->
+                <div id="cart-cash-details" class="payment-details">
+                    <h4>Cash Payment</h4>
+                    <p>You have selected to pay with cash at our studio.</p>
+                    <div class="business-details">
+                        <p><strong>Address:</strong> Lilongwe, Area 24, Malawi</p>
+                        <p><strong>Phone:</strong> +265 997 677 784</p>
+                        <p><strong>Available Hours:</strong> Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    </div>
+                    <p class="payment-info">Please bring exact amount if possible. Our team will contact you to confirm the payment details.</p>
+                </div>
+                
+                <button type="submit" class="btn primary-btn">Complete Payment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Payment Confirmation Modal -->
+    <div id="payment-confirmation" class="confirmation-modal">
+        <div class="confirmation-content">
+            <div class="confirmation-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Payment Successful!</h2>
+            <p>Thank you for your purchase. Your order has been confirmed.</p>
+            <div class="confirmation-details">
+                <p><strong>Order ID:</strong> <span id="order-id">-</span></p>
+                <p><strong>Amount Paid:</strong> <span id="confirmation-amount">0.00</span> MK</p>
+            </div>
+            <p>A confirmation email has been sent to your email address.</p>
+            <button class="btn primary-btn close-confirmation">Continue Shopping</button>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/265997677784" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Vegas Media</h3>
+                    <p>Capturing the beauty of Malawi through the lens of artistry and passion since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Traditional Wedding Photography</a></li>
+                        <li><a href="#">Cultural Portrait Sessions</a></li>
+                        <li><a href="#">Landscape Photography</a></li>
+                        <li><a href="#">Event Coverage</a></li>
+                        <li><a href="#">Photo Prints</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">+265997677784</a></li>
+                        <li><a href="#">vegasmediamw@gmail.com</a></li>
+                        <li><a href="#">Lilongwe, area 24, Malawi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vegas Media. All rights reserved. Designed By<span>KONDWANI</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
